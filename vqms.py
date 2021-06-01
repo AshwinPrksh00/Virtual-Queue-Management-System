@@ -45,7 +45,7 @@ def update(nam_inp):
                     ind = up_hlf + low_hlf
                     df.index = ind
                     df.loc[j+1] = [nam_inp, time_inp]
-                    for k in range(j,endc):
+                    for k in range(j,df['Name'].count()):
                         t4 = ((dt.datetime.strptime(str(df['ArrTime'][k]),'%H:%M:%S') - t3) + dt.datetime.min).time()
                         df['ArrTime'][k] = t4
                     df.drop([i], inplace=True)
