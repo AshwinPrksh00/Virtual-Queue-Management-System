@@ -8,9 +8,13 @@ It has 2 pages:
     b. Cancel Customer Booking     :  Cancels a customer booking and deletes him from the queue.<br>
     c. Update Customer Timing      :  Updates Customer's time if the customer is uncomfortable with that time.
     
+## Deployment
+To see results, click here: <a href="https://share.streamlit.io/ashwinprksh00/virtual-queue-management-system/main/vqms_script.py">VQMS</a>
 
-P.S:<br><br>
-     1. The data for the operations are preloaded into the repository within an excel file.<br>
-     2. The Customers are given a time interval of 30 minutes betwwen each.<br>
-     3. If a customer is deleted in between, the timings after the deleted customer will be reduced by 15 minutes.<br>
-     4. A customer timing is updated to between two customers if the timing between those customers is equal to or greater than 1 hour.
+
+
+## Note
+ 1. The data for the operations are preloaded into the repository within an excel file.<br>
+ 2. The Customers are given a time interval of 30 minutes betwwen each.<br>
+ 3. If a customer is deleted in between, the timings after the deleted customer will be reduced by 15 minutes.<br>
+ 4. A customer timing is updated to between two customers if the timing between those customers is equal to or greater than 1 hour.
