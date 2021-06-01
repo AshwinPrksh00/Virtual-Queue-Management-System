@@ -1,5 +1,6 @@
 # Virtual-Queue-Management-System
 This is a streamlit deployment of a basic queue management system.
+
 It has 2 pages:
   1. A Homepage where the queue as well as its statitics are displayed.
   2. An Operations page where all the operations of queue management system are done. It consists of 3 operations.
