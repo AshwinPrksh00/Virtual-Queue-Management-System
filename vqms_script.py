@@ -16,10 +16,6 @@ title_style = """<div style="background-image: linear-gradient(to right, #00467F
 <h2 style="color:white; text-align:left; text-indent: 35px;"><b>Vedanta Medical Shop</b></h2>
 </div>"""
  
-theme_style =  """ <style> .reportview-container 
-                         .st-at { background-color: #A5CC82; } footer { font-family: monospace; } 
-                         .reportview-container .main footer, .reportview-container .main footer a { color: #0c0080; } header 
-                         .decoration { background-image: none; } </style> """
 
 war_style = """<div style="background-image: linear-gradient(to right, #4b6cb7, #182848); padding: 5px; border-radius: 25px; width: 900px">
 <h4 style="color: white; text-align: center; text-indent: 30px;"><b>Empty Name cannot be entered</b></h4>
@@ -42,9 +38,11 @@ war1_style = """<div style="background-image: linear-gradient(to right, #4b6cb7,
 st.sidebar.markdown(img_style, unsafe_allow_html=True)
 option = st.sidebar.selectbox('Menu', ['Home', 'Operations'])
 st.markdown(title_style,unsafe_allow_html=True)
-#st.markdown(theme_style, unsafe_allow_html=True)
 if option == 'Home':
-    st.markdown("# Homepage",unsafe_allow_html=True)
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown("""<div style="background-image: linear-gradient(to right, #334d50, #cbcaa5); padding: 1px; border-radius: 25px; width: 900px">
+        <h2 style="color: white; text-indent: 35px;"><b>Homepage</b></h2>
+        </div> <br>""",unsafe_allow_html=True)
     c1,c2 = st.beta_columns([0.5,1])
     c2.write(df)
     st.markdown("<br>", unsafe_allow_html=True)
