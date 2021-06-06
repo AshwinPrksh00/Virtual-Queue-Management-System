@@ -12,12 +12,12 @@ st.set_page_config(
 from vqms import df, check, add, cancel, update
 
 #CSS Stylings
-title_style = """<div style="background-image: linear-gradient(to right, #00467F , #A5CC82); width: 900px; float: left; padding: 10px; border-radius: 20px;">
+title_style = """<div style="background-image: linear-gradient(to right, #00467F , #A5CC82); width: 130%; float: left; padding: 10px; border-radius: 20px;">
 <h2 style="color:white; text-align:left; text-indent: 35px;"><b>Vedanta Medical Shop</b></h2>
 </div>"""
  
 
-war_style = """<div style="background-image: linear-gradient(to right, #4b6cb7, #182848); padding: 5px; border-radius: 25px; width: 900px">
+war_style = """<div style="background-image: linear-gradient(to right, #4b6cb7, #182848); padding: 5px; border-radius: 25px; width: 130%">
 <h4 style="color: white; text-align: center; text-indent: 30px;"><b>Empty Name cannot be entered</b></h4>
 </div>"""
 
@@ -30,7 +30,7 @@ warn_style = """<br><label style="font-size: 25px; font-weight: bold; background
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;">Avoid Special Characters</label>"""
 
-war1_style = """<div style="background-image: linear-gradient(to right, #4b6cb7, #182848); padding: 5px; border-radius: 25px; width: 900px">
+war1_style = """<div style="background-image: linear-gradient(to right, #4b6cb7, #182848); padding: 5px; border-radius: 25px; width: 130%">
 <h4 style="color: white; text-align: center;"><b>Customer not found in Database</b></h4>
 </div>"""
 
@@ -40,13 +40,13 @@ option = st.sidebar.selectbox('Menu', ['Home', 'Operations'])
 st.markdown(title_style,unsafe_allow_html=True)
 if option == 'Home':
     st.markdown("<br>", unsafe_allow_html=True)
-    st.markdown("""<div style="background-image: linear-gradient(to right, #334d50, #cbcaa5); padding: 1px; border-radius: 25px; width: 900px">
+    st.markdown("""<div style="background-image: linear-gradient(to right, #334d50, #cbcaa5); padding: 1px; border-radius: 25px; width: 130%">
         <h2 style="color: white; text-indent: 35px;"><b>Homepage</b></h2>
         </div> <br>""",unsafe_allow_html=True)
     c1,c2 = st.beta_columns([0.5,1])
     c2.write(df)
     st.markdown("<br>", unsafe_allow_html=True)
-    st.markdown("""<div style="background-image: linear-gradient(to right, #1f4037, #99f2c8); padding: 1px; border-radius: 25px; width: 900px">
+    st.markdown("""<div style="background-image: linear-gradient(to right, #1f4037, #99f2c8); padding: 1px; border-radius: 25px; width: 130%">
         <h2 style="color: white; text-indent: 35px;"><b>Statistics</b></h2>
         </div> <br>""",unsafe_allow_html=True)
     kpi1,kpi2,kpi3 = st.beta_columns(3)
