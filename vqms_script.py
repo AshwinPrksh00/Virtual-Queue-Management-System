@@ -38,8 +38,8 @@ war1_style = """<div style="background-image: linear-gradient(to right, #4b6cb7,
 st.sidebar.markdown(img_style, unsafe_allow_html=True)
 option = st.sidebar.selectbox('Menu', ['Home', 'Operations'])
 st.markdown(title_style,unsafe_allow_html=True)
+st.markdown("<br>", unsafe_allow_html=True)
 if option == 'Home':
-    st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("""<div style="background-image: linear-gradient(to right, #334d50, #cbcaa5); padding: 1px; border-radius: 25px; width: 130%">
         <h2 style="color: white; text-indent: 35px;"><b>Homepage</b></h2>
         </div> <br>""",unsafe_allow_html=True)
