@@ -34,10 +34,10 @@ def update(nam_inp):
             for j in range(i,endc-1):
                 ti = dt.datetime.strptime(str(df['ArrTime'][j]),'%H:%M:%S') - time_zero + t2
                 ti2 = dt.datetime.strptime(str(df['ArrTime'][j+1]),'%H:%M:%S')
-                if(ti == ti2):
+                if(ti == ti2 or ((ti2 - ti + dt.datetime(1900,1,1)) < t2)):
                     count += 1
                 elif((ti2 - ti + dt.datetime(1900,1,1)) >= t2):
-                    st.write("Found an empty slot at", ti.time(), "\nAdding to time slot...")
+                    st.write("Found an empty slot at", (ti- t3 + dt.datetime(1900,1,1)).time(), "\nAdding to time slot...")
                     time_inp = ti.time()
                     up_hlf = [*range(0, j+1, 1)]
                     low_hlf = [*range(j+1, df.shape[0],1)]
