@@ -18,3 +18,6 @@ To see results, click here: <a href="https://share.streamlit.io/ashwinprksh00/vi
  2. The Customers are given a time interval of 30 minutes betwwen each.<br>
  3. If a customer is deleted in between, the timings after the deleted customer will be reduced by 15 minutes.<br>
  4. A customer timing is updated to between two customers if the timing between those customers is equal to or greater than 1 hour.
+
+## Update 1.0
+-Fixed the error of updating customer timing to end of queue.
